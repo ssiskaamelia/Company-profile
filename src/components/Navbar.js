@@ -22,6 +22,7 @@ function Navbar() {
       gotop.classList.remove("display");
       nav.classList.remove("navopened");
     }
+    
   });
   function openBar() {
     const bar = document.querySelector(".bar");
