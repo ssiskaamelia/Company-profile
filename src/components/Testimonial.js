@@ -1,8 +1,9 @@
 import Card from "./Card";
-function Testimonial() {
+import Cardtestimonial from "./CardTestimonial";
+function Services() {
   return (
     <div className="container services">
-        <h2 className="main-title text-center">Testimonial</h2>
+        <h2 className="main-title text-center">SERVICES</h2>
         <div className="card-cover">
             <div className="col-md-12">
                 <div className="row">
@@ -21,4 +22,4 @@ function Testimonial() {
     </div>
   );
 }
-export default Testimonial;
+export default Services;

@@ -2,7 +2,7 @@ import Card from "./Card";
 function Business() {
     return (
         <div className="container services">
-            <h2 className="main-title text-center">Business</h2>
+            <h2 className="main-title text-center">BUSINESS</h2>
             <div className="card-cover">
                 <div className="col-md-12">
                     <div className="row">

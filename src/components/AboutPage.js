@@ -1,20 +1,19 @@
-import About from '../components/About';
-import Contact from '../components/Contact';
+import About from './About';
+import Contact from './Contact';
 import Business from './Business';
 import GallerySection from './Gallery';
 import Testimonial from './Testimonial';
+import Services from './Testimonial';
 
-function Main() {
+function AboutPage() {
   return (
     <>
       <main>
         <About />
         <Business />
-        <Testimonial />
-        <GallerySection />
-        <Contact />
+        <Services />
       </main>
     </>
   );
 }
-export default Main;
+export default AboutPage;
