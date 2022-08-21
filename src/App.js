@@ -2,12 +2,14 @@ import React from 'react'
 import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { HomePage, AboutPage, BusinessPage, ServicesPage, CareerPage, MediaPage, ContactUsPage } from './pages';
+import { Button } from 'bootstrap';
 
 const App = () => {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/about" exact component={AboutPage} />
@@ -17,7 +19,7 @@ const App = () => {
         <Route path="/media" exact component={MediaPage} />
         <Route path="/contact" exact component={ContactUsPage} />
         <Redirect to="/" />
-      </Switch> */}
+      </Switch>
       <Footer />
     </>
   )
