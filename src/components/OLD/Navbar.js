@@ -1,13 +1,20 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "react-scroll";
-import { Button, Menu, MenuItem, Divider } from "@mui/material"
+import { Menu, MenuItem, Divider } from "@mui/material"
 
-function Navbar() {
-
+function Navbar(props) {
   const [anchorElabout, setAnchorElabout] = React.useState(null);
   const [anchorElmedia, setAnchorElmedia] = React.useState(null);
+  const [openPage, setOpenPage] = React.useState("");
   const openabout = Boolean(anchorElabout);
   const openmedia = Boolean(anchorElmedia);
+
+  useEffect(() => {
+    console.log("PAGE", openPage)
+    if(openPage !== "") {
+      handleOpenPage(openPage)
+    }
+  },[openPage])
 
   const handleClick = (event, name) => {
     if (name === "about") {
@@ -23,38 +30,35 @@ function Navbar() {
       setAnchorElmedia(null);
     }
   };
-  document.addEventListener("scroll", function (e) {
-    if (window.screen.width < 768 && window.scrollY > 690) {
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.add("display");
+  // document.addEventListener("scroll", function (e) {
+  //   if (window.screen.width < 768 && window.scrollY > 690) {
+  //     const gotop = document.querySelector(".gotop");
+  //     gotop.classList.add("display");
 
-      const nav = document.querySelector(".navbar");
+  //     const nav = document.querySelector(".navbar");
 
-      nav.classList.add("navopened");
-    } else if (window.screen.width > 768 && window.scrollY > 220) {
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.add("display");
+  //     nav.classList.add("navopened");
+  //   } else if (window.screen.width > 768 && window.scrollY > 220) {
+  //     const gotop = document.querySelector(".gotop");
+  //     gotop.classList.add("display");
 
-      const nav = document.querySelector(".navbar");
+  //     const nav = document.querySelector(".navbar");
 
-      nav.classList.add("navopened");
-    } else {
-      const nav = document.querySelector(".navbar");
-      const gotop = document.querySelector(".gotop");
-      gotop.classList.remove("display");
-      nav.classList.remove("navopened");
-    }
+  //     nav.classList.add("navopened");
+  //   } else {
+  //     const nav = document.querySelector(".navbar");
+  //     const gotop = document.querySelector(".gotop");
+  //     gotop.classList.remove("display");
+  //     nav.classList.remove("navopened");
+  //   }
 
-  });
-  function openBar() {
-
-    const bar = document.querySelector(".bar");
-
-    bar.classList.toggle("opened");
+  // });
+  const handleOpenPage = (page) => {
+    window.location.assign(page)
   }
 
   return (
-    <nav className="navbar">
+    <nav className="navbar solid">
       <div className="container">
         <div className="row">
           <h1 className="logo">
@@ -71,25 +75,28 @@ function Navbar() {
           <ul className="bar">
             <li>
               <Link
-                onClick={openBar}
+                className="staging"
+                onClick={() => setOpenPage("/")}
                 activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={1000}
-                to="headerbg"
+                to="/"
               >
-                Home
+                HOME
               </Link>
             </li>
             <li>
               <Link
+                className="staging"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 activeClass="active"
                 onClick={(event) => handleClick(event, "about")}
+                to="about"
               >
-                About
+                ABOUT
               </Link>
               <Menu
                 id="demo-customized-menu"
@@ -100,59 +107,59 @@ function Navbar() {
                 open={openabout}
                 onClose={() => handleClose("about")}
               >
-                <MenuItem onClick={() => handleClose("about")} disableRipple>
+                <MenuItem onClick={() => setOpenPage("about")} disableRipple>
                   {/* <EditIcon /> */}
-                  About Us
+                  ABOUT US
                 </MenuItem>
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={() => handleClose("about")} disableRipple>
+                <MenuItem onClick={() => setOpenPage("visimisi")} disableRipple>
                   {/* <FileCopyIcon /> */}
-                  Visi Misi
+                  VISI MISI
                 </MenuItem>
-                {/* <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={() => handleClose("about")} disableRipple>
-                  Motto
-                </MenuItem> */}
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={() => handleClose("about")} disableRipple>
+                <MenuItem onClick={() => setOpenPage("about")} disableRipple>
                   {/* <MoreHorizIcon /> */}
-                  Teams
+                  TEAMS
                 </MenuItem>
               </Menu>
             </li>
             <li>
               <Link
-                onClick={openBar}
+                className="staging"
+                onClick={() => setOpenPage('/business')}
+                to="business"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+              >
+                BUSINESS
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="staging"
+                onClick={() => setOpenPage('/services')}
                 to="services"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 activeClass="active"
               >
-                Business
+                SERVICES
               </Link>
             </li>
             <li>
               <Link
-                onClick={openBar}
-                to="services"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
+                className="staging"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 activeClass="active"
                 onClick={(event) => handleClick(event, "media")}
+                to="media"
               >
-                Media
+                MEDIA
               </Link>
               <Menu
                 id="demo-customized-menu"
@@ -163,36 +170,50 @@ function Navbar() {
                 open={openmedia}
                 onClose={() => handleClose("media")}
               >
-                <MenuItem onClick={() => handleClose("media")} disableRipple>
+                <MenuItem onClick={() => handleOpenPage("mediagallery")} disableRipple>
                   {/* <EditIcon /> */}
-                  Gallery
+                  GALLERY
                 </MenuItem>
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={() => handleClose("media")} disableRipple>
+                <MenuItem onClick={() => handleOpenPage("mediatestimonial")} disableRipple>
                   {/* <FileCopyIcon /> */}
-                  Testimonial
+                  TESTIMONIAL
                 </MenuItem>
                 <Divider sx={{ my: 0.5 }} />
-                <MenuItem onClick={() => handleClose("media")} disableRipple>
+                <MenuItem onClick={() => handleOpenPage("mediaprogram")} disableRipple>
                   {/* <ArchiveIcon /> */}
-                  Program
+                  PROGRAM
                 </MenuItem>
               </Menu>
             </li>
             <li>
               <Link
-                onClick={openBar}
+                className="staging"
+                onClick={() => setOpenPage('/services')}
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+              >
+                CAREER
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="staging"
+                onClick={() => setOpenPage('/contact')}
                 to="contact"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 activeClass="active"
               >
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>
-          <div className="button" onClick={openBar}>
+          <div className="button" onClick={() => setOpenPage()}>
             <div className="burger"></div>
             <div className="burger"></div>
             <div className="burger"></div>

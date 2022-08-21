@@ -1,8 +1,8 @@
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <video src="/video.mp4" loop autoPlay muted></video>
+      {/* <video src="/video.mp4" loop autoPlay muted></video>
       <h1>Yayasan Karya Bakti United Tractors</h1>
       <div className="row">
         <a href="about">
@@ -12,14 +12,14 @@ function Header() {
         </a>
         {/* <h2 style={{align}}>SYNERGY | COMPETENT | SPEED | PRODUCTIVE</h2> */}
 
-        <a href="contact">
+        {/* <a href="contact">
           <button className="btn" style={{ cursor: "pointer" }}>
             Contact Us
           </button>
         </a>
       </div>
 
-      <div className="headerbg"></div>
+      <div className="headerbg"></div> */}
     </header>
   );
 }
