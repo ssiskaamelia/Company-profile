@@ -7,7 +7,7 @@ import { HomePage, AboutPage, BusinessPage, ServicesPage, CareerPage, MediaPage,
 const App = () => {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/about" exact component={AboutPage} />
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/media" exact component={MediaPage} />
         <Route path="/contact" exact component={ContactUsPage} />
         <Redirect to="/" />
-      </Switch> */}
+      </Switch>
       <Footer />
     </>
   )
