@@ -9,10 +9,17 @@
   backdrop-filter: blur(2px);
   padding: 0!important;
 }
+.footer {
+  width: 100%;
+  padding: 0 150px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
 
 .containerNavbar {
   // background-color: white;
-  padding: 0 100px;
+  width: 100%;
+  padding: 0 150px;
   .navbarWrapper {
     display: flex;
     justify-content: space-between;
