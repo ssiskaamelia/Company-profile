@@ -78,6 +78,7 @@
 // export default Footer;
 
 import React from "react";
+import 'font-awesome/css/font-awesome.min.css';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
@@ -86,48 +87,43 @@ const Footer = () => {
       <footer className="pt-5 pb-3">
         <div className="row">
           <div className="col-4">
-            <h5>Important Link</h5>
+            <h5>Tautan</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Home
+                <a href="/" className="nav-link p-0 text-muted">
+                  Beranda
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  About
+                <a href="/business" className="nav-link p-0 text-muted">
+                  Bisnis
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Business
+                <a href="/services" className="nav-link p-0 text-muted">
+                  Layanan
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Services
+                <a href="/media" className="nav-link p-0 text-muted">
+                  Karir
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
+                <a href="career" className="nav-link p-0 text-muted">
                   Media
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Career
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Contact Us
+                <a href="/contact" className="nav-link p-0 text-muted">
+                  Hubungi
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="col-4">
-            <h5>Contact</h5>
+            <h5>Hubungi Kami</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <a href="#" className="nav-link p-0 text-muted">
@@ -148,21 +144,35 @@ const Footer = () => {
           </div>
 
           <div className="col-4">
-            <h5>Social Media</h5>
+            <h5>Media Sosial</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Instagram
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://instagram.com/"
+                  className="nav-link p-0 text-muted"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true">  Instagram</i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  Twitter
-                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/"
+                  className="nav-link p-0 text-muted"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true">  Twitter</i></a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  LinkedIn
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/"
+                  className="nav-link p-0 text-muted"
+                >
+                  <i class="fa fa-linkedin" aria-hidden="true">  Linkedin</i>
                 </a>
               </li>
             </ul>

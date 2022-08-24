@@ -1,4 +1,4 @@
-import HomePage from "./HomePage/HomePage"
+import HomePage from "./Homepage/HomePage"
 import AboutPage from "./AboutPage/AboutPage"
 import BusinessPage from "./BusinessPage/BusinessPage"
 import ServicesPage from "./ServicesPage/ServicesPage"

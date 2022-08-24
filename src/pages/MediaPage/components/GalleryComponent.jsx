@@ -1,9 +1,7 @@
 import React from 'react'
 
-const GalleryComponent = () => {
+export const GalleryComponent = () => {
   return (
     <div>GalleryComponent</div>
   )
 }
-
-export default GalleryComponent

@@ -5,9 +5,9 @@ import "./Navbar.scss";
 
 const Navbar = (props) => {
   const [anchorElAbout, setAnchorElAbout] = React.useState(null);
-  const [anchorElMedia, setAnchorElMedia] = React.useState(null);
+  const [anchorElCareer, setAnchorElCareer] = React.useState(null);
   const openAbout = Boolean(anchorElAbout);
-  const openMedia = Boolean(anchorElMedia);
+  const openCareer = Boolean(anchorElCareer);
 
   React.useEffect(() => {
     console.log("PROPS", props);
@@ -16,15 +16,15 @@ const Navbar = (props) => {
   const handleOpenMenu = (event, name) => {
     if (name === "about") {
       setAnchorElAbout(event.currentTarget);
-    } else if (name === "media") {
-      setAnchorElMedia(event.currentTarget);
+    } else if (name === "career") {
+      setAnchorElCareer(event.currentTarget);
     }
   };
   const handleClose = (name) => {
     if (name === "about") {
       setAnchorElAbout(null);
-    } else if (name === "media") {
-      setAnchorElMedia(null);
+    } else if (name === "career") {
+      setAnchorElCareer(null);
     }
   };
 
@@ -41,7 +41,7 @@ const Navbar = (props) => {
             <ul>
               <li>
                 <a className="link" href="/">
-                  HOME
+                  BERANDA
                 </a>
               </li>
               <li onMouseLeave={() => handleClose("about")}>
@@ -49,7 +49,7 @@ const Navbar = (props) => {
                   className="link"
                   onClick={(event) => handleOpenMenu(event, "about")}
                 >
-                  ABOUT
+                  TENTANG
                 </a>
                 <Menu
                   id="demo-customized-menu"
@@ -62,7 +62,7 @@ const Navbar = (props) => {
                 >
                   <MenuItem onClick={() => {}} disableRipple>
                     <a href="/about" className="menuLink">
-                      ABOUT US
+                      TENTANG KAMI
                     </a>
                   </MenuItem>
                   <Divider sx={{ my: 0.5 }} />
@@ -74,64 +74,70 @@ const Navbar = (props) => {
                   <Divider sx={{ my: 0.5 }} />
                   <MenuItem onClick={() => {}} disableRipple>
                     <a href="/about" className="menuLink">
-                      TEAMS
+                      PENGURUS
+                    </a>
+                  </MenuItem>
+                  <Divider sx={{ my: 0.5 }} />
+                  <MenuItem onClick={() => {}} disableRipple>
+                    <a href="/about" className="menuLink">
+                      TESTIMONIAL
                     </a>
                   </MenuItem>
                 </Menu>
               </li>
               <li>
                 <a className="link" href="/business">
-                  BUSINESS
+                  BISNIS
                 </a>
               </li>
               <li>
                 <a className="link" href="/services">
-                  SERVICES
+                  LAYANAN
                 </a>
               </li>
-              <li onMouseLeave={() => handleClose("media")}>
+              <li onMouseLeave={() => handleClose("career")}>
                 <a
                   className="link"
-                  onClick={(event) => handleOpenMenu(event, "media")}
+                  onClick={(event) => handleOpenMenu(event, "career")}
                 >
-                  MEDIA
+                  KARIR
                 </a>
                 <Menu
                   id="demo-customized-menu"
                   MenuListProps={{
                     "aria-labelledby": "demo-customized-button",
                   }}
-                  anchorEl={anchorElMedia}
-                  open={openMedia}
-                  onClose={() => handleClose("media")}
+                  anchorEl={anchorElCareer}
+                  open={openCareer}
+                  onClose={() => handleClose("career")}
                 >
                   <MenuItem disableRipple>
-                    <a href="/media" className="menuLink">
-                      GALLERY
+                    <a href="/career" className="menuLink">
+                      BERKARIR DI YKBUT
                     </a>
                   </MenuItem>
                   <Divider sx={{ my: 0.5 }} />
                   <MenuItem disableRipple>
-                    <a href="/media" className="menuLink">
-                      TESTIMONIAL
+                    <a href="/career" className="menuLink">
+                      INFO KARIR
                     </a>
                   </MenuItem>
                   <Divider sx={{ my: 0.5 }} />
                   <MenuItem disableRipple>
-                    <a href="/media" className="menuLink">
-                      PROGRAM
+                    <a href="/career" className="menuLink">
+                      TANYA & JAWAB
                     </a>
                   </MenuItem>
                 </Menu>
               </li>
               <li>
-                <a className="link" href="/career">
-                  CAREER
+                <a className="link" href="/media">
+                  MEDIA
                 </a>
               </li>
-              <li>
+                <li>
                 <a className="link" href="/contact">
-                  CONTACT US
+                  HUBUNGI
                 </a>
               </li>
             </ul>
