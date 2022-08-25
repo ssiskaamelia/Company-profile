@@ -11,6 +11,9 @@ import tree3 from "./tree3.jpg"
 import tree4 from "./tree4.jpg"
 import tree5 from "./tree5.jpg"
 import tree6 from "./tree6.jpg"
+import ykbut2 from "./ykbut2.JPG"
+import ykbut from "./ykbut.jpeg"
+
 
 export {
     Logo1, Logo2,
@@ -24,5 +27,7 @@ export {
     tree4,
     tree5,
     tree6,
-    userOne
+    userOne,
+    ykbut2,
+    ykbut
 }

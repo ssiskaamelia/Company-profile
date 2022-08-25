@@ -2,7 +2,7 @@ import React from "react";
 
 const CareerInfo = () => {
   return (
-    <div className="container container-sm">
+    <div className="container container-sm mb-5 mt-3">
       <h1 className="title">INFO KARIR</h1>
       <div className="row gy-5 mt-2 d-flex justify-content-center">
         <div className="card my-3 mx-4" style={{ maxWidth: "540px" }}>

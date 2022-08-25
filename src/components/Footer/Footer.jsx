@@ -180,7 +180,7 @@ const Footer = () => {
         </div>
 
         <div className="d-flex justify-content-between py-2 mt-4 border-top">
-          <p>&copy; 2022 Yayasan Karya Bhakti UT.</p>
+          <p>Copyright &copy; 2022 Yayasan Karya Bhakti UT, All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
               <a className="link-dark" href="#">

@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutPage.scss";
-import AboutUsComponent from "./components/AboutUsComponent";
-import VisiMisiComponent from "./components/VisiMisiComponent";
-import TeamsComponent from "./components/TeamsComponent";
-import Testimonials from "./components/TestimonialComponent";
+// import AboutUsComponent from "./components/AboutUsComponent";
+// import VisiMisiComponent from "./components/VisiMisiComponent";
+// import TeamsComponent from "./components/TeamsComponent";
+import Testimonials from "./components/ReviewComponent";
 import { tree6, userOne } from "../../assets/images";
 
 const AboutPage = () => {
@@ -56,8 +56,10 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      <div className="container mb-5">
       <div className="teams my-3">
         <h1 className="title">PENGURUS</h1>
+        </div>
         <div className="row mt-4">
           <div className="col text-center">
             <img className="rounded-circle mx-auto" src={userOne} alt="user" />
@@ -65,7 +67,7 @@ const AboutPage = () => {
           </div>
           <div className="col text-center">
             <img className="rounded-circle mx-auto" src={userOne} alt="user" />
-            <p className="name mt-3">User Name</p>
+            <p className="name mt-3">Nursidik</p>
           </div>
           <div className="col text-center">
             <img className="rounded-circle mx-auto" src={userOne} alt="user" />

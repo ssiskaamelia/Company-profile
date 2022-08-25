@@ -1,23 +1,17 @@
 import React from "react";
 import "./Image.css";
 import { LightgalleryItem, ItemTitle, LinesEllipsis } from "react-lightgallery";
-import {
-  agency1,
-  agency2,
-  agency3,
-  agency4,
-  tree5,
-} from "../../../assets/images";
+import { ykbut, ykbut2, agency3, agency4, tree5 } from "../../../assets/images";
 
 const Imagelist = () => {
   const data = [
     {
-      image: agency1,
-      title: "Title 1",
+      image: ykbut2,
+      title: "Gedung YKBUT",
     },
     {
-      image: agency2,
-      title: "Title 2",
+      image: ykbut,
+      title: "Studio YLC",
     },
     {
       image: agency3,
