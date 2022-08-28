@@ -9,8 +9,8 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-}
-.content {
+  }
+  .content {
     top: 0;
     height: 100vh;
     display: flex;
@@ -18,10 +18,15 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    background: rgba(0, 0, 0, 0.5);
     h1 {
       z-index: 1;
       color: white;
       font-size: 64px;
+    }
+    h2 {
+      z-index: 1;
+      color: yellow;
     }
     .row {
       a {
@@ -29,7 +34,7 @@
           outline: 0;
           border: 0;
           font-size: 20px;
-          border-radius: 5px;
+          border-radius: 15px;
           text-decoration: none;
           color: white;
           font-weight: 500;

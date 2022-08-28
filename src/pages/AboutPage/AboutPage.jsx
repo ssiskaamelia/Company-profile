@@ -1,19 +1,16 @@
 import React from "react";
 import "./AboutPage.scss";
-// import AboutUsComponent from "./components/AboutUsComponent";
-// import VisiMisiComponent from "./components/VisiMisiComponent";
-// import TeamsComponent from "./components/TeamsComponent";
-import Testimonials from "./components/ReviewComponent";
-import { tree6, userOne } from "../../assets/images";
+import { ykbut2, userOne } from "../../assets/images";
+import Review from "./components/ReviewComponent";
 
 const AboutPage = () => {
   return (
     <div className="container">
       <div className="about">
-        <h1 className="title mb-5">TENTANG YKBUT</h1>
+        <h2 className="title mb-5 mt-5">TENTANG YKBUT</h2>
         <div className="row mt-4">
           <div className="col">
-            <img className="rounded-4" src={tree6} alt="About Images" />
+            <img className="rounded-4" src={ykbut2} alt="About Images" />
           </div>
           <div className="col-7 mx-4">
             <p className="fs-5 mb-2">
@@ -37,14 +34,14 @@ const AboutPage = () => {
       <div className="visimisi my-3 ">
         <div className="row">
           <div className="col mx-5">
-            <h1 className="title">VISI</h1>
+            <h2 className="title">VISI</h2>
             <p className="fs-5 mt-4">
               Menjadi Yayasan yang Terbaik di Tingkat Nasional dalam Memberikan
               Nilai Tambah dan Layanan bagi seluruh Stakeholder-nya.
             </p>
           </div>
           <div className="col mx-5">
-            <h1 className="title">MISI</h1>
+            <h2 className="title">MISI</h2>
             <p className="fs-5 mt-4">
               Menciptakan Sumber Daya Manusia yang Berkualitas, Berdaya Saing
               Tinggi, Profesional, dan Berkarakter Mandiri. Menciptakan Jaringan
@@ -56,9 +53,10 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      {/* Teams */}
       <div className="container mb-5">
-      <div className="teams my-3">
-        <h1 className="title">PENGURUS</h1>
+        <div className="teams my-3">
+          <h2 className="title">PENGURUS</h2>
         </div>
         <div className="row mt-4">
           <div className="col text-center">
@@ -79,7 +77,13 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <Testimonials />
+      {/* Testimonial */}
+      <div className="container mb-5">
+        <div className="teams my-3">
+          <h2 className="title mb-4">TESTIMONIAL</h2>
+          <Review />
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  padding: 0 150px;
+  margin-top: 40px;
+  background-color: #e9ecef;
+}
+
+.link-hoover {
+  &:hover {
+    color: #15c386;
+  }
+}

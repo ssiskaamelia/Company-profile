@@ -7,8 +7,8 @@ import QuestionsComponent from "./components/QuestionsComponent";
 const CareerPage = () => {
   return (
     <div className="container">
-      <CareerInfo />
       <Careerykbut />
+      <CareerInfo />
       <QuestionsComponent />
     </div>
   );

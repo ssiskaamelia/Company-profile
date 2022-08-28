@@ -6,12 +6,35 @@ import "./Navbar.scss";
 const Navbar = (props) => {
   const [anchorElAbout, setAnchorElAbout] = React.useState(null);
   const [anchorElCareer, setAnchorElCareer] = React.useState(null);
+  const [navPath, setNavPath] = React.useState([
+    "/about",
+    "/business",
+    "/services",
+    "/career",
+    "/media",
+    "/contact",
+  ]);
+  const [navHome, setNavHome] = React.useState(false);
   const openAbout = Boolean(anchorElAbout);
   const openCareer = Boolean(anchorElCareer);
 
+  console.log("HOME", navHome);
+
   React.useEffect(() => {
-    console.log("PROPS", props);
-  }, [props]);
+    const path = window.location.href;
+    if (
+      path.includes("about") ||
+      path.includes("business") ||
+      path.includes("services") ||
+      path.includes("career") ||
+      path.includes("media") ||
+      path.includes("contact")
+    ) {
+      setNavHome(false);
+    } else {
+      setNavHome(true);
+    }
+  }, [window.location.href]);
 
   const handleOpenMenu = (event, name) => {
     if (name === "about") {
@@ -40,16 +63,16 @@ const Navbar = (props) => {
           <div className="navLink">
             <ul>
               <li>
-                <a className="link" href="/">
+                <a className={navHome ? "link home-navbar" : "link"} href="/">
                   BERANDA
                 </a>
               </li>
               <li onMouseLeave={() => handleClose("about")}>
                 <a
-                  className="link"
-                  onClick={(event) => handleOpenMenu(event, "about")}
+                  className={navHome ? "link home-navbar" : "link"}
+                  onMouseEnter={(event) => handleOpenMenu(event, "about")}
                 >
-                  TENTANG
+                  TENTANG <i className="fa fa-angle-down" aria-hidden="true" />
                 </a>
                 <Menu
                   id="demo-customized-menu"
@@ -86,21 +109,27 @@ const Navbar = (props) => {
                 </Menu>
               </li>
               <li>
-                <a className="link" href="/business">
+                <a
+                  className={navHome ? "link home-navbar" : "link"}
+                  href="/business"
+                >
                   BISNIS
                 </a>
               </li>
               <li>
-                <a className="link" href="/services">
+                <a
+                  className={navHome ? "link home-navbar" : "link"}
+                  href="/services"
+                >
                   LAYANAN
                 </a>
               </li>
               <li onMouseLeave={() => handleClose("career")}>
                 <a
-                  className="link"
-                  onClick={(event) => handleOpenMenu(event, "career")}
+                  className={navHome ? "link home-navbar" : "link"}
+                  onMouseEnter={(event) => handleOpenMenu(event, "career")}
                 >
-                  KARIR
+                  KARIR <i className="fa fa-angle-down" aria-hidden="true" />
                 </a>
                 <Menu
                   id="demo-customized-menu"
@@ -131,12 +160,18 @@ const Navbar = (props) => {
                 </Menu>
               </li>
               <li>
-                <a className="link" href="/media">
-                  MEDIA
+                <a
+                  className={navHome ? "link home-navbar" : "link"}
+                  href="/media"
+                >
+                  GALERI
                 </a>
               </li>
-                <li>
-                <a className="link" href="/contact">
+              <li>
+                <a
+                  className={navHome ? "link home-navbar" : "link"}
+                  href="/contact"
+                >
                   HUBUNGI
                 </a>
               </li>

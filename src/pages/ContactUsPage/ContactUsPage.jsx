@@ -3,7 +3,7 @@ import React from "react";
 const ContactUsPage = () => {
   return( 
     <div className="container container-sm">
-      <h1 className="title">HUBUNGI KAMI</h1>
+      <h2 className="title">HUBUNGI KAMI</h2>
       </div>
   )
 };

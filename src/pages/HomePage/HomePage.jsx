@@ -6,14 +6,15 @@ const HomePage = () => {
     <div className="containerHeader">
       <video src="/video.mp4" loop autoPlay muted className="video"></video>
       <div className="content">
-        <h1>Yayasan Karya Bakti United Tractors</h1>
+        <h1>YAYASAN KARYA BAKTI</h1>
+        <h2>UNITED TRACTORS</h2>
+        {/* <h3>SYNERGY | COMPETENT | SPEED | PRODUCTIVE</h3> */}
         <div className="row">
           <a href="about">
             <button className="btn" style={{ cursor: "pointer" }}>
               Get started
             </button>
           </a>
-          {/* <h2 style={{align}}>SYNERGY | COMPETENT | SPEED | PRODUCTIVE</h2> */}
           {/* <a href="contact">
               <button className="btn" style={{ cursor: "pointer" }}>
               Contact Us

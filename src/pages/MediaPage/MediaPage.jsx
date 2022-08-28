@@ -18,7 +18,7 @@ const MediaPage = () => {
           maxWidth="lg"
           sx={{ textAlign: "center", mt: "5rem", color: "#15c386" }}
         >
-          <h1 className="container">RUANG MEDIA</h1>
+          <h2 className="container mb-5">GALERI YKBUT</h2>
           <Imagelist />
         </Container>
       </LightgalleryProvider>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Image.css";
 import { LightgalleryItem, ItemTitle, LinesEllipsis } from "react-lightgallery";
-import { ykbut, ykbut2, agency3, agency4, tree5 } from "../../../assets/images";
+import { ykbut, ykbut2, ykbut3, ykbut4 } from "../../../assets/images";
 
 const Imagelist = () => {
   const data = [
@@ -14,15 +14,15 @@ const Imagelist = () => {
       title: "Studio YLC",
     },
     {
-      image: agency3,
+      image: ykbut3,
       title: "Title 3",
     },
     {
-      image: tree5,
+      image: ykbut4,
       title: "Title 5",
     },
     {
-      image: agency4,
+      image: ykbut2,
       title: "Title 4",
     },
   ];
