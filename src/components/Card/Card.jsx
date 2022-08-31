@@ -13,13 +13,27 @@ const Card = ({ name, desc, image, kolom }) => {
       >
         <div className="col">
           <div className="d-flex justify-content-end row p-3">
-            <i className="fa fa-instagram mb-2" aria-hidden="true"></i>
-            <i className="fa fa-facebook-square mb-2" aria-hidden="true"></i>
-            <i
-              className="fa fa-youtube"
-              style={{ marginBottom: "30px" }}
-              aria-hidden="true"
-            ></i>
+            <a href="/" target="_blank">
+              <i
+                className="fa fa-instagram mb-2"
+                aria-hidden="true"
+                style={{ cursor: "pointer", color: "black", fontSize: "20px" }}
+              ></i>
+            </a>
+            <a href="/" target="_blank">
+              <i
+                className="fa fa-twitter mb-2"
+                aria-hidden="true"
+                style={{ cursor: "pointer", color: "black", fontSize: "20px"}}
+              ></i>
+            </a>
+            <a href="/" target="_blank">
+              <i
+                className="fa fa-youtube mb-2"
+                aria-hidden="true"
+                style={{ cursor: "pointer", color: "black", fontSize: "20px" }}
+              ></i>
+            </a>
           </div>
           <div className="card p-3 bg-secondary">
             <div className="row d-flex justify-content-center">

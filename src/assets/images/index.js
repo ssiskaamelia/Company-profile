@@ -5,6 +5,7 @@ import ykbut2 from "./ykbut2.JPG";
 import ykbut4 from "./ykbut3.jpeg";
 import ykbut3 from "./ykbut4.jpeg";
 import ykbut from "./ykbut.jpeg";
+import MapIndo from "./MapIndo.png";
 
 export {
   Logo1,
@@ -14,4 +15,5 @@ export {
   ykbut,
   ykbut3,
   ykbut4,
+  MapIndo,
 };

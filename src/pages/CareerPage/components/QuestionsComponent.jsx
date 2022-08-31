@@ -45,7 +45,7 @@ const QuestionsComponent = () => {
 
   return (
     <div className="container container-sm mt-3">
-      <h2 className="title mb-4">TANYA & JAWAB</h2>
+      <h2 className="title mb-5">TANYA & JAWAB</h2>
       <Accordion className="mt-2" open={open} toggle={toggle}>
         {question.map((data) => (
         <AccordionItem>

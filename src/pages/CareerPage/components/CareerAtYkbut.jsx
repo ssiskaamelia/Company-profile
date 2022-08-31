@@ -8,7 +8,7 @@ import "./career.scss";
 const Careerykbut = () => {
   return (
     <div className="container container-sm mb-5">
-      <h2 className="title mb-4">BERKARIR DI YKBUT</h2>
+      <h2 className="title mb-5 mt-5">BERKARIR DI YKBUT</h2>
       <div>
         <p>
           Sumber Daya Manusia (SDM) merupakan aset utama United Tractors (UT)

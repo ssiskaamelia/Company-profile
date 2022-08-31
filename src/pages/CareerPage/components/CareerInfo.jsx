@@ -93,7 +93,7 @@ const CareerInfo = () => {
   };
 
   return (
-    <div className="container container-sm mb-5 mt-3">
+    <div className="container container-sm mb-5 mt-5">
       <h2 className="title mb-3">INFO KARIR</h2>
       <div className="row gy-5 mt-2 d-flex justify-content-center">
         {dataCareer.map((data) => renderCareer(data))}

@@ -25,8 +25,9 @@
       }
     }
     .navLink {
-      margin: auto;
-      ul {
+      margin: auto 0 auto auto;
+      ul {  
+        margin: 0;
         color: black;
         list-style: none;
         display: flex;

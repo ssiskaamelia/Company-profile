@@ -177,7 +177,6 @@ const Navbar = (props) => {
               </li>
             </ul>
           </div>
-          <div style={{ width: "150px" }}></div>
         </div>
       </div>
     </AppBar>

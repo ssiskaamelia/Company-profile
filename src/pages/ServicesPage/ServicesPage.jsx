@@ -5,19 +5,19 @@ import Card from "../../components/Card/Card";
 const ServicesPage = () => {
   const [data, setData] = useState([
     {
-      nama: "PT MITRA BAKTI UT",
+      nama: "UT SCHOOL",
       desc: "Perusahaan building management yang diakui keberadaannya di Indonesia, peduli akan lingkungan, serta dapat dipercaya.",
     },
     {
-      nama: "PT GLOBAL SERVICE INDONESIA",
+      nama: "UT D'CARE",
       desc: "Penyediaan jasa SDM bidang Administrasi dan IT berbagai perusahaan di Astra Group",
     },
     {
-      nama: "PT GLOBAL SERVICE INDONESIA",
+      nama: "POLIKLINIK",
       desc: "Penyediaan jasa SDM bidang Administrasi dan IT berbagai perusahaan di Astra Group",
     },
     {
-      nama: "PT GLOBAL SERVICE INDONESIA",
+      nama: "YKBUT LEARNING CENTER",
       desc: "Penyediaan jasa SDM bidang Administrasi dan IT berbagai perusahaan di Astra Group",
     },
   ]);
