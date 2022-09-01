@@ -7,18 +7,30 @@ const ServicesPage = () => {
     {
       nama: "UT SCHOOL",
       desc: "Perusahaan building management yang diakui keberadaannya di Indonesia, peduli akan lingkungan, serta dapat dipercaya.",
+      url: "https://www.utschool.sch.id/",
+      linkIg: "https://www.instagram.com/utschoolinsani/",
+      linkYt: "https://www.youtube.com/c/UTSchoolinsani",
     },
     {
       nama: "UT D'CARE",
       desc: "Penyediaan jasa SDM bidang Administrasi dan IT berbagai perusahaan di Astra Group",
+      url: "https://dcareut.com/",
+      linkIg: "https://www.instagram.com/dcare_ut/?hl=id",
+      linkYt: "https://www.youtube.com/channel/UCDl_MyAsxJb2DIFLK8n1hng",
     },
     {
       nama: "POLIKLINIK",
       desc: "Penyediaan jasa SDM bidang Administrasi dan IT berbagai perusahaan di Astra Group",
+      url: "https://www.google.com/",
+      linkIg: "https://www.instagram.com/",
+      linkYt: "https://www.youtube.com",
     },
     {
       nama: "YKBUT LEARNING CENTER",
       desc: "Penyediaan jasa SDM bidang Administrasi dan IT berbagai perusahaan di Astra Group",
+      url: "https://ylcku.com/",
+      linkIg: "https://www.instagram.com/explore/tags/mitrabaktiut/",
+      linkYt: "https://www.youtube.com/channel/UC23eQZlbI_BavTiKZcgEcRg",
     },
   ]);
   return (

@@ -17,7 +17,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://instagram.com/"
+                href="https://www.instagram.com/ykbutofficial/"
                 className="nav-link p-0 text-muted mx-2"
               >
                 <i className="fa fa-lg fa-instagram text-dark" style={{transform: [{ scale: 2 }]}} aria-hidden="true"/>
@@ -33,7 +33,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://youtube.com/"
+                href="https://www.youtube.com/channel/UCOsZmiEPqgyOwOPDRJYUJzg"
                 className="nav-link p-0 text-muted mx-2"
               >
                 <i className="fa fa-lg fa-youtube text-dark" style={{transform: [{ scale: 2 }]}} aria-hidden="true"/>
@@ -41,11 +41,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-4">
-            <h3 className="text-center">YAYASAN KARYA BHAKTI UT</h3>
-            <p className="text-center m-0 text-dark">Jl. Raya Bekasi Km 22</p>
-            <p className="text-center m-0 text-dark">Cakkung, Jakarta Timur</p>
-            <p className="text-center m-0 text-dark">Indonesia, 13910</p>
-            <p className="text-center m-0 text-dark">Phone +62 21 2457 9999</p>
+            <h3 className="text-center mb-5" style={{color: "yellow"}}>Yayasan Karya Bakti UT</h3>
+            <p className="text-center m-0 text-dark" style={{fontSize: "120%"}}>Jl. Raya Bekasi Km 22</p>
+            <p className="text-center m-0 text-dark" style={{fontSize: "120%"}}>Cakkung, Jakarta Timur</p>
+            <p className="text-center m-0 text-dark" style={{fontSize: "120%"}}>Indonesia, 13910</p>
+            {/* <p className="text-center m-0 text-dark">Phone +62 21 2457 9999</p> */}
           </div>
           <div className="col-4 d-flex align-item-center">
             <img src={MapIndo} style={{width: "400px", margin: "auto"}} alt="INDONESIA" className="image" />

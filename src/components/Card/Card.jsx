@@ -1,4 +1,4 @@
-const Card = ({ name, desc, image, kolom }) => {
+const Card = ({ name, desc, image, kolom, url, linkIg, linkYt }) => {
   return (
     <div
       className={
@@ -13,21 +13,21 @@ const Card = ({ name, desc, image, kolom }) => {
       >
         <div className="col">
           <div className="d-flex justify-content-end row p-3">
-            <a href="/" target="_blank">
+            <a onClick={() => window.open(linkIg)}>
               <i
                 className="fa fa-instagram mb-2"
                 aria-hidden="true"
                 style={{ cursor: "pointer", color: "black", fontSize: "20px" }}
               ></i>
             </a>
-            <a href="/" target="_blank">
+            <a onClick={() => {}}>
               <i
                 className="fa fa-twitter mb-2"
                 aria-hidden="true"
                 style={{ cursor: "pointer", color: "black", fontSize: "20px"}}
               ></i>
             </a>
-            <a href="/" target="_blank">
+            <a onClick={() => window.open(linkYt)}>
               <i
                 className="fa fa-youtube mb-2"
                 aria-hidden="true"
@@ -49,6 +49,7 @@ const Card = ({ name, desc, image, kolom }) => {
                 type="button"
                 className="btn w-50 shadow-sm fw-bolder text-white"
                 style={{ backgroundColor: "#15c386" }}
+                onClick={() => window.open(url)}
               >
                 More Info
               </button>
