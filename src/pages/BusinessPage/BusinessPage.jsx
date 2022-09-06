@@ -42,6 +42,7 @@ const BusinessPage = () => {
       linkIg: "https://www.instagram.com/lspabi/",
       linkYt: "https://www.youtube.com",
     },
+<<<<<<< Updated upstream
     {
       nama: "LSP ABI",
       desc: "ini adalah deskripsi",
@@ -49,6 +50,15 @@ const BusinessPage = () => {
       linkIg: "https://www.instagram.com",
       linkYt: "https://www.youtube.com",
     },
+=======
+    // {
+    //   nama: "LSP ABI",
+    //   desc: "ini adalah deskripsi",
+    //   url: "https://www.google.com",
+    //   linkIg: "https://www.instagram.com",
+    //   linkYt: "https://www.youtube.com"
+    // },
+>>>>>>> Stashed changes
   ]);
 
   return (

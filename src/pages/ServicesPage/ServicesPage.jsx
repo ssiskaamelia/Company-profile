@@ -6,7 +6,7 @@ const ServicesPage = () => {
   const [data, setData] = useState([
     {
       nama: "UT SCHOOL",
-      desc: "Perusahaan building management yang diakui keberadaannya di Indonesia, peduli akan lingkungan, serta dapat dipercaya.",
+      desc: "Lembaga Pendidikan Keterampilan Mekanik, Operator Alat-alat Berat serta Konstruksi Terbaik di Dunia",
       url: "https://www.utschool.sch.id/",
       linkIg: "https://www.instagram.com/utschoolinsani/",
       linkYt: "https://www.youtube.com/c/UTSchoolinsani",
