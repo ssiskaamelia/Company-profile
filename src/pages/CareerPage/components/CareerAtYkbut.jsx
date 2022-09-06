@@ -10,7 +10,7 @@ const Careerykbut = () => {
     <div className="container container-sm mb-5">
       <h2 className="title mb-5 mt-5">BERKARIR DI YKBUT</h2>
       <div>
-        <p>
+        <p style={{fontSize: "17px"}}>
           Sumber Daya Manusia (SDM) merupakan aset utama United Tractors (UT)
           dalam menjalankan kegiatan usaha. UT merekrut SDM berkompeten,
           berkualitas serta siap bekerja bersama untuk mewujudkan keberlanjutan

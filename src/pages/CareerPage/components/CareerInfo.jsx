@@ -71,7 +71,7 @@ const CareerInfo = () => {
 
   const renderCareer = (data) => {
     return (
-      <div className="col col-5 card my-3 mx-3" >
+      <div className="col col-5 card mt-4 mx-3" >
         <div className="row g-0">
           <div className="col-md-4 p-4">
             <p>LOGO</p>

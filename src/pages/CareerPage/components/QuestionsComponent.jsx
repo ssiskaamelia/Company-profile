@@ -44,7 +44,7 @@ const QuestionsComponent = () => {
   };
 
   return (
-    <div className="container container-sm mt-3">
+    <div className="container container-sm mt-5 mb-5">
       <h2 className="title mb-5">TANYA & JAWAB</h2>
       <Accordion className="mt-2" open={open} toggle={toggle}>
         {question.map((data) => (
